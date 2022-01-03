@@ -6,6 +6,8 @@ namespace Unzipper
     {
         private static void Main(string[] args)
         {
+			Console.WriteLine("Unzipper\nValid arguments:\nDELETE /d, -d, --delete\nINCLUDE SUBDIRECTORIES /s, -s, --sub\nPARALLEL PROCESSING (use a number after the argument to specify the degree) /p, -p, --parallel");
+			Console.WriteLine("Example: unzipper C:\Users\USERNAME\Downloads -d -s -p 4\n");
             var folderPath = GetFolderPath(args);
             var maxDegreeOfParallelism = GetMaxDegreeOfParallelism(args);
             FileInfo[] zipFiles;
